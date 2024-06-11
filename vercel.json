@@ -3,9 +3,10 @@
     "builds": [
         {
             "src": "demo/wsgi.py",
-            "use": "@vercel/python",
+            "use": "@ardnt/vercel-python-wsgi",
             "config": {
-                "runtime": "python3.9"
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.8"
             }
         }
     ],
