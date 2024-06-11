@@ -6,7 +6,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "bookdata/wsgi.py"
+            "dest": "demo/wsgi.py"
         }
     ]
 }
