@@ -1,9 +1,14 @@
 {
-    "routes": [
+    "builds": [
         {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
-        },
+            "src": "demo/wsgi.py",
+            "use": "@ardnt/vercel-python-wsgi",
+            "config": {
+                "maxLambdaSize": "15mb"
+            }
+        }
+    ],
+    "routes": [
         {
             "src": "/(.*)",
             "dest": "demo/wsgi.py"
